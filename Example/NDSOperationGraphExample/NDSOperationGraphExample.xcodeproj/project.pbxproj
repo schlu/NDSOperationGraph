@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A4072ED191556DE00CE8244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4072EC191556DE00CE8244 /* Foundation.framework */; };
+		8A4072EF191556DE00CE8244 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4072EE191556DE00CE8244 /* CoreGraphics.framework */; };
+		8A4072F1191556DE00CE8244 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4072F0191556DE00CE8244 /* UIKit.framework */; };
+		8A4072F7191556DE00CE8244 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A4072F5191556DE00CE8244 /* InfoPlist.strings */; };
+		8A4072F9191556DE00CE8244 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4072F8191556DE00CE8244 /* main.m */; };
+		8A4072FD191556DE00CE8244 /* NDSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4072FC191556DE00CE8244 /* NDSAppDelegate.m */; };
+		8A407300191556DE00CE8244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4072FE191556DE00CE8244 /* Main.storyboard */; };
+		8A407303191556DE00CE8244 /* NDSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A407302191556DE00CE8244 /* NDSViewController.m */; };
+		8A407305191556DE00CE8244 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A407304191556DE00CE8244 /* Images.xcassets */; };
+		8A40730C191556DE00CE8244 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A40730B191556DE00CE8244 /* XCTest.framework */; };
+		8A40730D191556DE00CE8244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4072EC191556DE00CE8244 /* Foundation.framework */; };
+		8A40730E191556DE00CE8244 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4072F0191556DE00CE8244 /* UIKit.framework */; };
+		8A407316191556DE00CE8244 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A407314191556DE00CE8244 /* InfoPlist.strings */; };
+		8A407318191556DE00CE8244 /* NDSOperationGraphExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A407317191556DE00CE8244 /* NDSOperationGraphExampleTests.m */; };
+		8A40733F1915DCED00CE8244 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8A4073381915DCED00CE8244 /* .gitkeep */; };
+		8A4073401915DCED00CE8244 /* NDSGraphOperationBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A40733A1915DCED00CE8244 /* NDSGraphOperationBase.m */; };
+		8A4073411915DCED00CE8244 /* NDSOperationGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A40733C1915DCED00CE8244 /* NDSOperationGraph.m */; };
+		8A4073421915DCED00CE8244 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8A40733E1915DCED00CE8244 /* .gitkeep */; };
+		8A4073451915DD3E00CE8244 /* NDSSampleOperationBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4073441915DD3E00CE8244 /* NDSSampleOperationBase.m */; };
+		8A4073481915DE6A00CE8244 /* NDSOperationFoo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4073471915DE6A00CE8244 /* NDSOperationFoo.m */; };
+		8A40734B1915DE7C00CE8244 /* NDSOperationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A40734A1915DE7C00CE8244 /* NDSOperationBar.m */; };
+		8A40734E1915DE8D00CE8244 /* NDSOperationBaz.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A40734D1915DE8D00CE8244 /* NDSOperationBaz.m */; };
+		8A4073511915DE9D00CE8244 /* NDSOperationZap.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4073501915DE9D00CE8244 /* NDSOperationZap.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A40730F191556DE00CE8244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A4072E1191556DE00CE8244 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A4072E8191556DE00CE8244;
+			remoteInfo = NDSOperationGraphExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8A4072E9191556DE00CE8244 /* NDSOperationGraphExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDSOperationGraphExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A4072EC191556DE00CE8244 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8A4072EE191556DE00CE8244 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8A4072F0191556DE00CE8244 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8A4072F4191556DE00CE8244 /* NDSOperationGraphExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NDSOperationGraphExample-Info.plist"; sourceTree = "<group>"; };
+		8A4072F6191556DE00CE8244 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A4072F8191556DE00CE8244 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A4072FA191556DE00CE8244 /* NDSOperationGraphExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NDSOperationGraphExample-Prefix.pch"; sourceTree = "<group>"; };
+		8A4072FB191556DE00CE8244 /* NDSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDSAppDelegate.h; sourceTree = "<group>"; };
+		8A4072FC191556DE00CE8244 /* NDSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDSAppDelegate.m; sourceTree = "<group>"; };
+		8A4072FF191556DE00CE8244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A407301191556DE00CE8244 /* NDSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDSViewController.h; sourceTree = "<group>"; };
+		8A407302191556DE00CE8244 /* NDSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDSViewController.m; sourceTree = "<group>"; };
+		8A407304191556DE00CE8244 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8A40730A191556DE00CE8244 /* NDSOperationGraphExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDSOperationGraphExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A40730B191556DE00CE8244 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8A407313191556DE00CE8244 /* NDSOperationGraphExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NDSOperationGraphExampleTests-Info.plist"; sourceTree = "<group>"; };
+		8A407315191556DE00CE8244 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A407317191556DE00CE8244 /* NDSOperationGraphExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDSOperationGraphExampleTests.m; sourceTree = "<group>"; };
+		8A4073381915DCED00CE8244 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8A4073391915DCED00CE8244 /* NDSGraphOperationBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDSGraphOperationBase.h; sourceTree = "<group>"; };
+		8A40733A1915DCED00CE8244 /* NDSGraphOperationBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDSGraphOperationBase.m; sourceTree = "<group>"; };
+		8A40733B1915DCED00CE8244 /* NDSOperationGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDSOperationGraph.h; sourceTree = "<group>"; };
+		8A40733C1915DCED00CE8244 /* NDSOperationGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDSOperationGraph.m; sourceTree = "<group>"; };
+		8A40733E1915DCED00CE8244 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8A4073431915DD3E00CE8244 /* NDSSampleOperationBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDSSampleOperationBase.h; sourceTree = "<group>"; };
+		8A4073441915DD3E00CE8244 /* NDSSampleOperationBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDSSampleOperationBase.m; sourceTree = "<group>"; };
+		8A4073461915DE6A00CE8244 /* NDSOperationFoo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDSOperationFoo.h; sourceTree = "<group>"; };
+		8A4073471915DE6A00CE8244 /* NDSOperationFoo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDSOperationFoo.m; sourceTree = "<group>"; };
+		8A4073491915DE7C00CE8244 /* NDSOperationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDSOperationBar.h; sourceTree = "<group>"; };
+		8A40734A1915DE7C00CE8244 /* NDSOperationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDSOperationBar.m; sourceTree = "<group>"; };
+		8A40734C1915DE8C00CE8244 /* NDSOperationBaz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDSOperationBaz.h; sourceTree = "<group>"; };
+		8A40734D1915DE8D00CE8244 /* NDSOperationBaz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDSOperationBaz.m; sourceTree = "<group>"; };
+		8A40734F1915DE9D00CE8244 /* NDSOperationZap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDSOperationZap.h; sourceTree = "<group>"; };
+		8A4073501915DE9D00CE8244 /* NDSOperationZap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDSOperationZap.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A4072E6191556DE00CE8244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A4072EF191556DE00CE8244 /* CoreGraphics.framework in Frameworks */,
+				8A4072F1191556DE00CE8244 /* UIKit.framework in Frameworks */,
+				8A4072ED191556DE00CE8244 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A407307191556DE00CE8244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A40730C191556DE00CE8244 /* XCTest.framework in Frameworks */,
+				8A40730E191556DE00CE8244 /* UIKit.framework in Frameworks */,
+				8A40730D191556DE00CE8244 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A4072E0191556DE00CE8244 = {
+			isa = PBXGroup;
+			children = (
+				8A4073361915DCED00CE8244 /* Classes */,
+				8A4072F2191556DE00CE8244 /* NDSOperationGraphExample */,
+				8A407311191556DE00CE8244 /* NDSOperationGraphExampleTests */,
+				8A4072EB191556DE00CE8244 /* Frameworks */,
+				8A4072EA191556DE00CE8244 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A4072EA191556DE00CE8244 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A4072E9191556DE00CE8244 /* NDSOperationGraphExample.app */,
+				8A40730A191556DE00CE8244 /* NDSOperationGraphExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A4072EB191556DE00CE8244 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A4072EC191556DE00CE8244 /* Foundation.framework */,
+				8A4072EE191556DE00CE8244 /* CoreGraphics.framework */,
+				8A4072F0191556DE00CE8244 /* UIKit.framework */,
+				8A40730B191556DE00CE8244 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A4072F2191556DE00CE8244 /* NDSOperationGraphExample */ = {
+			isa = PBXGroup;
+			children = (
+				8A40732E1915D2CC00CE8244 /* Operations */,
+				8A4072FB191556DE00CE8244 /* NDSAppDelegate.h */,
+				8A4072FC191556DE00CE8244 /* NDSAppDelegate.m */,
+				8A4072FE191556DE00CE8244 /* Main.storyboard */,
+				8A407301191556DE00CE8244 /* NDSViewController.h */,
+				8A407302191556DE00CE8244 /* NDSViewController.m */,
+				8A407304191556DE00CE8244 /* Images.xcassets */,
+				8A4072F3191556DE00CE8244 /* Supporting Files */,
+			);
+			path = NDSOperationGraphExample;
+			sourceTree = "<group>";
+		};
+		8A4072F3191556DE00CE8244 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A4072F4191556DE00CE8244 /* NDSOperationGraphExample-Info.plist */,
+				8A4072F5191556DE00CE8244 /* InfoPlist.strings */,
+				8A4072F8191556DE00CE8244 /* main.m */,
+				8A4072FA191556DE00CE8244 /* NDSOperationGraphExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A407311191556DE00CE8244 /* NDSOperationGraphExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A407317191556DE00CE8244 /* NDSOperationGraphExampleTests.m */,
+				8A407312191556DE00CE8244 /* Supporting Files */,
+			);
+			path = NDSOperationGraphExampleTests;
+			sourceTree = "<group>";
+		};
+		8A407312191556DE00CE8244 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A407313191556DE00CE8244 /* NDSOperationGraphExampleTests-Info.plist */,
+				8A407314191556DE00CE8244 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A40732E1915D2CC00CE8244 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				8A4073431915DD3E00CE8244 /* NDSSampleOperationBase.h */,
+				8A4073441915DD3E00CE8244 /* NDSSampleOperationBase.m */,
+				8A4073461915DE6A00CE8244 /* NDSOperationFoo.h */,
+				8A4073471915DE6A00CE8244 /* NDSOperationFoo.m */,
+				8A4073491915DE7C00CE8244 /* NDSOperationBar.h */,
+				8A40734A1915DE7C00CE8244 /* NDSOperationBar.m */,
+				8A40734C1915DE8C00CE8244 /* NDSOperationBaz.h */,
+				8A40734D1915DE8D00CE8244 /* NDSOperationBaz.m */,
+				8A40734F1915DE9D00CE8244 /* NDSOperationZap.h */,
+				8A4073501915DE9D00CE8244 /* NDSOperationZap.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		8A4073361915DCED00CE8244 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8A4073371915DCED00CE8244 /* ios */,
+				8A4073391915DCED00CE8244 /* NDSGraphOperationBase.h */,
+				8A40733A1915DCED00CE8244 /* NDSGraphOperationBase.m */,
+				8A40733B1915DCED00CE8244 /* NDSOperationGraph.h */,
+				8A40733C1915DCED00CE8244 /* NDSOperationGraph.m */,
+				8A40733D1915DCED00CE8244 /* osx */,
+			);
+			name = Classes;
+			path = ../../Classes;
+			sourceTree = "<group>";
+		};
+		8A4073371915DCED00CE8244 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				8A4073381915DCED00CE8244 /* .gitkeep */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		8A40733D1915DCED00CE8244 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				8A40733E1915DCED00CE8244 /* .gitkeep */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A4072E8191556DE00CE8244 /* NDSOperationGraphExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A40731B191556DE00CE8244 /* Build configuration list for PBXNativeTarget "NDSOperationGraphExample" */;
+			buildPhases = (
+				8A4072E5191556DE00CE8244 /* Sources */,
+				8A4072E6191556DE00CE8244 /* Frameworks */,
+				8A4072E7191556DE00CE8244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NDSOperationGraphExample;
+			productName = NDSOperationGraphExample;
+			productReference = 8A4072E9191556DE00CE8244 /* NDSOperationGraphExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A407309191556DE00CE8244 /* NDSOperationGraphExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A40731E191556DE00CE8244 /* Build configuration list for PBXNativeTarget "NDSOperationGraphExampleTests" */;
+			buildPhases = (
+				8A407306191556DE00CE8244 /* Sources */,
+				8A407307191556DE00CE8244 /* Frameworks */,
+				8A407308191556DE00CE8244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A407310191556DE00CE8244 /* PBXTargetDependency */,
+			);
+			name = NDSOperationGraphExampleTests;
+			productName = NDSOperationGraphExampleTests;
+			productReference = 8A40730A191556DE00CE8244 /* NDSOperationGraphExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A4072E1191556DE00CE8244 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NDS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "2 Limes";
+				TargetAttributes = {
+					8A407309191556DE00CE8244 = {
+						TestTargetID = 8A4072E8191556DE00CE8244;
+					};
+				};
+			};
+			buildConfigurationList = 8A4072E4191556DE00CE8244 /* Build configuration list for PBXProject "NDSOperationGraphExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A4072E0191556DE00CE8244;
+			productRefGroup = 8A4072EA191556DE00CE8244 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A4072E8191556DE00CE8244 /* NDSOperationGraphExample */,
+				8A407309191556DE00CE8244 /* NDSOperationGraphExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A4072E7191556DE00CE8244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A407305191556DE00CE8244 /* Images.xcassets in Resources */,
+				8A4072F7191556DE00CE8244 /* InfoPlist.strings in Resources */,
+				8A4073421915DCED00CE8244 /* .gitkeep in Resources */,
+				8A407300191556DE00CE8244 /* Main.storyboard in Resources */,
+				8A40733F1915DCED00CE8244 /* .gitkeep in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A407308191556DE00CE8244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A407316191556DE00CE8244 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A4072E5191556DE00CE8244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A4073451915DD3E00CE8244 /* NDSSampleOperationBase.m in Sources */,
+				8A4072FD191556DE00CE8244 /* NDSAppDelegate.m in Sources */,
+				8A4073401915DCED00CE8244 /* NDSGraphOperationBase.m in Sources */,
+				8A4073481915DE6A00CE8244 /* NDSOperationFoo.m in Sources */,
+				8A4073411915DCED00CE8244 /* NDSOperationGraph.m in Sources */,
+				8A4073511915DE9D00CE8244 /* NDSOperationZap.m in Sources */,
+				8A4072F9191556DE00CE8244 /* main.m in Sources */,
+				8A407303191556DE00CE8244 /* NDSViewController.m in Sources */,
+				8A40734E1915DE8D00CE8244 /* NDSOperationBaz.m in Sources */,
+				8A40734B1915DE7C00CE8244 /* NDSOperationBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A407306191556DE00CE8244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A407318191556DE00CE8244 /* NDSOperationGraphExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A407310191556DE00CE8244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A4072E8191556DE00CE8244 /* NDSOperationGraphExample */;
+			targetProxy = 8A40730F191556DE00CE8244 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A4072F5191556DE00CE8244 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A4072F6191556DE00CE8244 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8A4072FE191556DE00CE8244 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A4072FF191556DE00CE8244 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A407314191556DE00CE8244 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A407315191556DE00CE8244 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A407319191556DE00CE8244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8A40731A191556DE00CE8244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A40731C191556DE00CE8244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NDSOperationGraphExample/NDSOperationGraphExample-Prefix.pch";
+				INFOPLIST_FILE = "NDSOperationGraphExample/NDSOperationGraphExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8A40731D191556DE00CE8244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NDSOperationGraphExample/NDSOperationGraphExample-Prefix.pch";
+				INFOPLIST_FILE = "NDSOperationGraphExample/NDSOperationGraphExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8A40731F191556DE00CE8244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NDSOperationGraphExample.app/NDSOperationGraphExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NDSOperationGraphExample/NDSOperationGraphExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NDSOperationGraphExampleTests/NDSOperationGraphExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8A407320191556DE00CE8244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NDSOperationGraphExample.app/NDSOperationGraphExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NDSOperationGraphExample/NDSOperationGraphExample-Prefix.pch";
+				INFOPLIST_FILE = "NDSOperationGraphExampleTests/NDSOperationGraphExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A4072E4191556DE00CE8244 /* Build configuration list for PBXProject "NDSOperationGraphExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A407319191556DE00CE8244 /* Debug */,
+				8A40731A191556DE00CE8244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A40731B191556DE00CE8244 /* Build configuration list for PBXNativeTarget "NDSOperationGraphExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A40731C191556DE00CE8244 /* Debug */,
+				8A40731D191556DE00CE8244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8A40731E191556DE00CE8244 /* Build configuration list for PBXNativeTarget "NDSOperationGraphExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A40731F191556DE00CE8244 /* Debug */,
+				8A407320191556DE00CE8244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A4072E1191556DE00CE8244 /* Project object */;
+}
