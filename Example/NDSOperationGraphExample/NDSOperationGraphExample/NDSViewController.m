@@ -104,6 +104,9 @@
 
 - (IBAction)graphFailsMissingLayerAction:(id)sender {
     self.graph = [[NDSOperationGraph alloc] init];
+    [self.graph setSuccessBlock:^{
+        NSLog(@"never called");
+    }];
     [self.graph setFailureBlock:^(NDSGraphOperationBase *operation, NSError *error, id errorObject){
         NSLog(@"errorObject %@", errorObject);
     }];

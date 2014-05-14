@@ -38,13 +38,13 @@
 
 - (void)addOperations:(NSArray *)operations {
     for (NDSGraphOperationBase *operation in operations) {
-        operation.graph = self;
         [self addOperation:operation];
     }
 }
 
 - (void)addOperation:(NDSGraphOperationBase *)operation {
     NSMutableArray *operationsOfType = self.operations[NSStringFromClass([operation class])];
+    operation.graph = self;
     if (!operationsOfType) {
         operationsOfType = [NSMutableArray array];
         self.operations[NSStringFromClass([operation class])] = operationsOfType;
@@ -65,6 +65,7 @@
 }
 
 - (void)operationFailure:(NDSGraphOperationBase *)operation error:(NSError *)error object:(id)object {
+    self.operationError = YES;
     if (self.failureBlock) {
         self.failureBlock(operation, error, object);
     }
