@@ -13,6 +13,7 @@
 @property (nonatomic, strong) NSMutableDictionary *dependencies;
 @property (nonatomic, strong) NSMutableDictionary *operations;
 @property (nonatomic, assign) BOOL operationError;
+@property (nonatomic, assign) BOOL graphCanceled;
 
 @end
 
@@ -23,6 +24,7 @@
         self.dependencies = [NSMutableDictionary dictionary];
         self.operations = [NSMutableDictionary dictionary];
         self.operationError = NO;
+        self.graphCanceled = NO;
     }
     return self;
 }
@@ -69,7 +71,13 @@
     if (self.failureBlock) {
         self.failureBlock(operation, error, object);
     }
-    for (NDSGraphOperationBase *operation in [self allOperations]) {
+    [self cancelAllOperations];
+}
+
+- (void)cancelAllOperations {
+    self.graphCanceled = YES;
+    NSArray *operationCopy = [[self allOperations] copy];
+    for (NDSGraphOperationBase *operation in operationCopy) {
         [operation cancel];
     }
 }
@@ -120,7 +128,7 @@
     [operationsOfType removeObject:operation];
     if ([operationsOfType count] == 0) {
         [self.operations removeObjectForKey:NSStringFromClass([operation class])];
-        if ([self.operations count] == 0 && !self.operationError && self.successBlock) {
+        if ([self.operations count] == 0 && !self.operationError && self.successBlock && !self.graphCanceled) {
             self.successBlock();
         }
     }

@@ -23,6 +23,7 @@ typedef void (^NDSGraphFailureBlock)(NDSGraphOperationBase *operation, NSError *
 - (void)addOperations:(NSArray *)operations;
 - (void)addOperation:(NDSGraphOperationBase *)operation;
 - (void)startOperationsOnOperationQueue:(NSOperationQueue *)operationQueue;
+- (void)cancelAllOperations;
 
 - (void)operationFailure:(NDSGraphOperationBase *)operation error:(NSError *)error object:(id)object;
 
