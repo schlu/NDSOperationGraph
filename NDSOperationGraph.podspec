@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "NDSOperationGraph"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "A short description of NDSOperationGraph."
   s.description      = <<-DESC
                        An optional longer description of NDSOperationGraph
@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
   s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Nicholas Schlueter" => "schlueter@gmail.com" }
-  s.source           = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/EXAMPLE'
+  s.source           = { :git => "https://github.com/schlu/NDSOperationGraph.git" }
+  s.social_media_url = 'https://twitter.com/schlu'
 
   # s.platform     = :ios, '5.0'
   # s.ios.deployment_target = '5.0'
