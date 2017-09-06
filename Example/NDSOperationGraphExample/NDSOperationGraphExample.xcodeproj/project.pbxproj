@@ -21,10 +21,8 @@
 		8A40730E191556DE00CE8244 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4072F0191556DE00CE8244 /* UIKit.framework */; };
 		8A407316191556DE00CE8244 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A407314191556DE00CE8244 /* InfoPlist.strings */; };
 		8A407318191556DE00CE8244 /* NDSOperationGraphExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A407317191556DE00CE8244 /* NDSOperationGraphExampleTests.m */; };
-		8A40733F1915DCED00CE8244 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8A4073381915DCED00CE8244 /* .gitkeep */; };
 		8A4073401915DCED00CE8244 /* NDSGraphOperationBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A40733A1915DCED00CE8244 /* NDSGraphOperationBase.m */; };
 		8A4073411915DCED00CE8244 /* NDSOperationGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A40733C1915DCED00CE8244 /* NDSOperationGraph.m */; };
-		8A4073421915DCED00CE8244 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8A40733E1915DCED00CE8244 /* .gitkeep */; };
 		8A4073451915DD3E00CE8244 /* NDSSampleOperationBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4073441915DD3E00CE8244 /* NDSSampleOperationBase.m */; };
 		8A4073481915DE6A00CE8244 /* NDSOperationFoo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4073471915DE6A00CE8244 /* NDSOperationFoo.m */; };
 		8A40734B1915DE7C00CE8244 /* NDSOperationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A40734A1915DE7C00CE8244 /* NDSOperationBar.m */; };
@@ -62,12 +60,10 @@
 		8A407313191556DE00CE8244 /* NDSOperationGraphExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NDSOperationGraphExampleTests-Info.plist"; sourceTree = "<group>"; };
 		8A407315191556DE00CE8244 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8A407317191556DE00CE8244 /* NDSOperationGraphExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDSOperationGraphExampleTests.m; sourceTree = "<group>"; };
-		8A4073381915DCED00CE8244 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		8A4073391915DCED00CE8244 /* NDSGraphOperationBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDSGraphOperationBase.h; sourceTree = "<group>"; };
 		8A40733A1915DCED00CE8244 /* NDSGraphOperationBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDSGraphOperationBase.m; sourceTree = "<group>"; };
 		8A40733B1915DCED00CE8244 /* NDSOperationGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDSOperationGraph.h; sourceTree = "<group>"; };
 		8A40733C1915DCED00CE8244 /* NDSOperationGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDSOperationGraph.m; sourceTree = "<group>"; };
-		8A40733E1915DCED00CE8244 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		8A4073431915DD3E00CE8244 /* NDSSampleOperationBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDSSampleOperationBase.h; sourceTree = "<group>"; };
 		8A4073441915DD3E00CE8244 /* NDSSampleOperationBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDSSampleOperationBase.m; sourceTree = "<group>"; };
 		8A4073461915DE6A00CE8244 /* NDSOperationFoo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDSOperationFoo.h; sourceTree = "<group>"; };
@@ -199,31 +195,13 @@
 		8A4073361915DCED00CE8244 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8A4073371915DCED00CE8244 /* ios */,
 				8A4073391915DCED00CE8244 /* NDSGraphOperationBase.h */,
 				8A40733A1915DCED00CE8244 /* NDSGraphOperationBase.m */,
 				8A40733B1915DCED00CE8244 /* NDSOperationGraph.h */,
 				8A40733C1915DCED00CE8244 /* NDSOperationGraph.m */,
-				8A40733D1915DCED00CE8244 /* osx */,
 			);
 			name = Classes;
 			path = ../../Classes;
-			sourceTree = "<group>";
-		};
-		8A4073371915DCED00CE8244 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				8A4073381915DCED00CE8244 /* .gitkeep */,
-			);
-			path = ios;
-			sourceTree = "<group>";
-		};
-		8A40733D1915DCED00CE8244 /* osx */ = {
-			isa = PBXGroup;
-			children = (
-				8A40733E1915DCED00CE8244 /* .gitkeep */,
-			);
-			path = osx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,9 +283,7 @@
 			files = (
 				8A407305191556DE00CE8244 /* Images.xcassets in Resources */,
 				8A4072F7191556DE00CE8244 /* InfoPlist.strings in Resources */,
-				8A4073421915DCED00CE8244 /* .gitkeep in Resources */,
 				8A407300191556DE00CE8244 /* Main.storyboard in Resources */,
-				8A40733F1915DCED00CE8244 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +516,7 @@
 				8A40731D191556DE00CE8244 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A40731E191556DE00CE8244 /* Build configuration list for PBXNativeTarget "NDSOperationGraphExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +525,7 @@
 				8A407320191556DE00CE8244 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
