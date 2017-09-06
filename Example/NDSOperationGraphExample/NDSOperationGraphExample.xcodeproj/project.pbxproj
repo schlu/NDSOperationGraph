@@ -28,6 +28,7 @@
 		8A40734B1915DE7C00CE8244 /* NDSOperationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A40734A1915DE7C00CE8244 /* NDSOperationBar.m */; };
 		8A40734E1915DE8D00CE8244 /* NDSOperationBaz.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A40734D1915DE8D00CE8244 /* NDSOperationBaz.m */; };
 		8A4073511915DE9D00CE8244 /* NDSOperationZap.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4073501915DE9D00CE8244 /* NDSOperationZap.m */; };
+		8A6D83201F605B4B0015FC4D /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6D831F1F605B4B0015FC4D /* Launch.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		8A40734D1915DE8D00CE8244 /* NDSOperationBaz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDSOperationBaz.m; sourceTree = "<group>"; };
 		8A40734F1915DE9D00CE8244 /* NDSOperationZap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDSOperationZap.h; sourceTree = "<group>"; };
 		8A4073501915DE9D00CE8244 /* NDSOperationZap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDSOperationZap.m; sourceTree = "<group>"; };
+		8A6D831F1F605B4B0015FC4D /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				8A407302191556DE00CE8244 /* NDSViewController.m */,
 				8A407304191556DE00CE8244 /* Images.xcassets */,
 				8A4072F3191556DE00CE8244 /* Supporting Files */,
+				8A6D831F1F605B4B0015FC4D /* Launch.storyboard */,
 			);
 			path = NDSOperationGraphExample;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				8A407305191556DE00CE8244 /* Images.xcassets in Resources */,
 				8A4072F7191556DE00CE8244 /* InfoPlist.strings in Resources */,
 				8A407300191556DE00CE8244 /* Main.storyboard in Resources */,
+				8A6D83201F605B4B0015FC4D /* Launch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,10 +439,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NDSOperationGraphExample/NDSOperationGraphExample-Prefix.pch";
 				INFOPLIST_FILE = "NDSOperationGraphExample/NDSOperationGraphExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -448,10 +452,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NDSOperationGraphExample/NDSOperationGraphExample-Prefix.pch";
 				INFOPLIST_FILE = "NDSOperationGraphExample/NDSOperationGraphExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
