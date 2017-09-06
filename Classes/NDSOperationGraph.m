@@ -55,6 +55,9 @@
     NDSGraphOperationBase *localOperation = operation;
     __weak typeof(self) welf = self;
     operation.completionBlock = ^{
+        if(!localOperation) {
+            return;
+        }
         [welf operationCompleted:localOperation];
     };
 }
